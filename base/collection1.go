@@ -13,4 +13,5 @@ func main() {
 	s2 := append(s1, 3, 5, 6, 7)
 	s3 := append(s2, s0...)
 	fmt.Println(s3)
+
 }
