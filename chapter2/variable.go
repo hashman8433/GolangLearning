@@ -1,6 +1,6 @@
 package main
 
-func control () int {
+func control() int {
 	x := 5
 	if x > 0 {
 		return 5
@@ -14,7 +14,7 @@ func controlIf() {
 		println("true")
 	}
 
-	if ! false {
+	if !false {
 		println("true")
 	}
 }

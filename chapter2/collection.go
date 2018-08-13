@@ -9,10 +9,10 @@ func main() {
 	arr[1] = 43
 	fmt.Println("The first element is %d", arr[0])
 
-	a := [2][2]int{ [2]int{1,2}, [2]int{3,4}}
+	a := [2][2]int{[2]int{1, 2}, [2]int{3, 4}}
 	fmt.Println(a)
 
-	a1 := [2][2]int{ [...]int{1,2}, [...]int{3,4}}
+	a1 := [2][2]int{[...]int{1, 2}, [...]int{3, 4}}
 	fmt.Println(a1)
 
 	slice := arr[0:2]
@@ -36,5 +36,13 @@ func main() {
 	fmt.Println(s5)
 	fmt.Println(" s +++++++++++++++ end ++++++++")
 
+	var a3 = [...]int{0, 1, 2, 3, 4, 5, 6, 7}
+	var s = make([]int, 6)
+	fmt.Println(s)
+	n1 := copy(s, a3[0:])
+	a3[5] = 14
+	fmt.Println("n1 =", n1, " s = ", s, " a3 = ", a3)
+	n2 := copy(s, a3[2:])
+	fmt.Println("n2 =", n2, " s = ", s, " s3 = ", s3)
 
 }
