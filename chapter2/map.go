@@ -10,6 +10,9 @@ func main() {
 		"Oct": 31, "Nov": 30, "Dec": 31,
 	}
 
+	monthdays["Mi"] = 69
+	fmt.Println(monthdays)
+
 	year := 0
 	for _, days := range monthdays {
 		year += days
